@@ -1,3 +1,10 @@
-source 'https://rubygems.org'
+# frozen_string_literal: true
 
-gemspec
+source "https://rubygems.org"
+
+gem 'nokogiri'
+gem 'rack', '~>2.1'
+
+group :test do
+    gem 'rspec', :require => 'spec'
+end
